@@ -1,0 +1,16 @@
+{
+  "name": "altitude-item-bot",
+  "version": "1.0.0",
+  "description": "To store and display vote crate items",
+  "main": "altmain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BangCryDie",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "discord.js-commando": "github:discordjs/Commando",
+    "mongoose": "^5.12.3"
+  }
+}
