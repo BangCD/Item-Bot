@@ -33,6 +33,8 @@ if(mongoCommand==='add'){
 client.commands.get('add').execute(message,args);
 }
 
+
+
 //UPDATE ITEMS AVALABILITY BY ITEM NAME IN DATABASE 
 else if(mongoCommand==='updateava'){
     client.commands.get('updateava').execute(message,args);
@@ -52,6 +54,17 @@ else if(mongoCommand==='delete'){
 else if(mongoCommand==='find'){
     client.commands.get('find').execute(message,args);
 }
+
+else if(mongoCommand==='helpfind'){
+     message.channel.send(' ``` To find an item use "#find" "item name". Example- #find Chainmail Coif ``` ')
+    
+}
+
+else if(mongoCommand==='helpadmin'){
+
+    message.channel.send('  To __**ADD**__ an item into the Database use `"#add" "item name;item type;material;enchantments;lore;From;Avalability"` make us of ";" after each category. Example- ```"#add Chainmail Coif;Helmet;Chainmail;Mending, Prot IV, Unbreaking III;A tough hood of steel rings.;Super Crate;No"``` \n To __**Update**__ an item completly that already exists in the Database use `"#update" "item name;item type;material;enchantments;lore;From;Avalability"`  Example- ```"#update Chainmail Coif;Helmet;Chainmail;Mending, Prot II, Unbreaking II;A tough hood of steel rings.;Weekly Crate;No"``` \n To Update just the avalability of an item that already exists in the Database use `"#updateava" "item name;Avalability"` Example- ```"#updateava" "Chainmail Coif;Yes"``` \n To __**Delete**__ an item completly that already exists in the Database use `"#delete" "item name"` Example- ```"#delete" "Chainmail Coif"``` ')
+}
+
 
 
 
