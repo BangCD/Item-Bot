@@ -1,17 +1,10 @@
 const mongo= require('../mongo');
 const itemSchema=require('../schemas/item-schema.js')
 
-const{Command}=require('discord.js-commando');
-
-module.exports=class addCommand extends Command{
-    concstuctor(user){
-        super(user,{ 
+module.exports={
     name:'add',
-    description:'add items to the database',
-    userPermission:['MANAGE_MESSAGES'],
+    description:'add item into the  database',
 
-});
-    }
     
 
     async execute(message,args){
